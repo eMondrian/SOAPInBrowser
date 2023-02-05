@@ -3,7 +3,7 @@ export async function request (url: string | URL, data: string | null, exheaders
   try {
     fetchFunc = fetch
   } catch (e) {
-    fetchFunc = require('cross-fetch')
+    fetchFunc = require('cross-fetch').fetch
   }
 
   const baseHeaders = {
